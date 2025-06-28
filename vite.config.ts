@@ -8,13 +8,24 @@ export default defineConfig({
     alias: {
       '@': path.resolve(__dirname, './src'),
     },
+    extensions: ['.ts', '.tsx', '.js', '.jsx', '.json']
   },
   build: {
     outDir: 'dist',
-    emptyOutDir: true
+    emptyOutDir: true,
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+          ui: ['@radix-ui/react-dialog', '@radix-ui/react-select', '@radix-ui/react-tabs']
+        }
+      }
+    }
   },
   server: {
     port: 5173,
     strictPort: true,
   },
+
 })

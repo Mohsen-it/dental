@@ -15,11 +15,11 @@ import {
   Calendar,
   DollarSign
 } from 'lucide-react'
-import GlobalSearch from '@/components/global/GlobalSearch'
-import SmartAlerts from '@/components/global/SmartAlerts'
-import QuickAccessDashboard from '@/components/global/QuickAccessDashboard'
-import ElegantShortcutsDisplay from '@/components/help/ElegantShortcutsDisplay'
-import DashboardAnalytics from '@/components/dashboard/DashboardAnalytics'
+import GlobalSearch from '../components/global/GlobalSearch'
+import SmartAlerts from '../components/global/SmartAlerts'
+import QuickAccessDashboard from '../components/global/QuickAccessDashboard'
+import ElegantShortcutsDisplay from '../components/help/ElegantShortcutsDisplay'
+import DashboardAnalytics from '../components/dashboard/DashboardAnalytics'
 import { useGlobalStore } from '@/store/globalStore'
 import { useSettingsStore } from '@/store/settingsStore'
 import { useStableClinicName } from '@/hooks/useStableSettings'

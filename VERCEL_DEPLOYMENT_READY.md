@@ -16,10 +16,14 @@ error while loading shared libraries: libnss3.so: cannot open shared object file
 ### 2. تحديث إعدادات Vercel
 ```json
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist", 
   "framework": "vite",
-  "installCommand": "npm install --production --ignore-scripts"
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "env": {
+    "SKIP_ELECTRON": "true",
+    "NODE_ENV": "production"
+  }
 }
 ```
 

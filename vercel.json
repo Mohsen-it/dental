@@ -31,5 +31,10 @@
   ],
   "env": {
     "NODE_ENV": "production"
+  },
+  "functions": {
+    "app/**/*.js": {
+      "runtime": "nodejs18.x"
+    }
   }
 }

@@ -4,6 +4,10 @@
   "description": "Dental Clinic Management System - Demo Version",
   "author": "فريق تطوير العيادة السنية <dev@dental-clinic.com>",
   "type": "module",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",

@@ -55,3 +55,16 @@ Thumbs.db
 
 # Demo version - removed sensitive files
 scripts/generateKeyForDevice.js
+
+# Electron specific (not needed for web demo)
+electron/
+*.exe
+*.dmg
+*.AppImage
+*.deb
+*.rpm
+*.snap
+release/
+build/
+installer/
+app-builder-lib/

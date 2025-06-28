@@ -2,7 +2,7 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
-  "installCommand": "npm install",
+  "installCommand": "npm install --production --ignore-scripts",
   "devCommand": "npm run dev",
   "rewrites": [
     {
@@ -30,7 +30,9 @@
     }
   ],
   "env": {
-    "NODE_ENV": "production"
+    "NODE_ENV": "production",
+    "SKIP_ELECTRON": "true",
+    "CI": "true"
   },
   "functions": {
     "app/**/*.js": {

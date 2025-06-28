@@ -4,6 +4,19 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Electron specific files (not needed for web)
+electron/
+*.exe
+*.dmg
+*.AppImage
+*.deb
+*.rpm
+*.snap
+release/
+installer/
+app-builder-lib/
+scripts/generateKeyForDevice.js
+
 # Build outputs
 dist/
 build/

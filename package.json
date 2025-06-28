@@ -47,10 +47,14 @@
     "tailwindcss-animate": "^1.0.7",
     "uuid": "^9.0.1",
     "zod": "^3.25.67",
-    "zustand": "^5.0.5"
+    "zustand": "^5.0.5",
+    "qrcode": "^1.5.4",
+    "exceljs": "^4.4.0"
   },
   "devDependencies": {
     "@types/jsbarcode": "^3.11.4",
+    "@types/qrcode": "^1.5.5",
+    "@types/uuid": "^9.0.8",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@vitejs/plugin-react": "^4.1.1",
